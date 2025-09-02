@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CustomKeys - Contacto</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pacifico&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        <img class="icono" src="../Images/CustomKeys-logo.png" alt="Logo-empresa" width="500" height="500">
+        <h1>✨CustomKeys✨</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="presupuesto.html">Presupuesto</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Antes de enviar el formulario</h2>
+            <p class="box">Cuéntanos para qué usarás el teclado (gaming, oficina, escritura, edición), el tamaño que prefieres (60%, 65%, 75%, TKL, 96%, full-size)
+            y qué sonido buscas (suave/silencioso, táctil, clicky).</p>
+
+            <h2>Horario y tiempos de respuesta</h2>
+            <p class="box">Atendemos de lunes a viernes, 10:00-19:00. Respondemos normalmente en menos de 24 h laborables.</p>
+
+            <h2>Datos de contacto alternativos</h2>
+            <ul class="box-list">
+                <li>Email: contacto@customkeys.com</li>
+                <li>Teléfono/WhatsApp: +34 600 123 456</li>
+                <li>Dirección: Calle Teclado 123, Ciudad Custom (visitas con cita previa)</li>
+            </ul>
+
+            <h2>Citas presenciales</h2>
+            <p class="box">Si quieres probar switches o keycaps, solicita cita y prepara tu lista de preferidos. Tenemos “testers” para que compares sensaciones y sonido.</p>
+
+            <h2>Privacidad (microcopy claro)</h2>
+            <p class="box">Para poder enviar el formulario tienes que aceptar nuestra política de privacidad. Usaremos tus datos solo para gestionar tu consulta y nunca los cederemos a terceros.</p>
+
+            <h2>Ubicación</h2>
+            <p class="box">Aquí tienes un mapa de la ubicación de nuestra empresa física en España:</p>
+            <img class="mapa" src="../Images/Mapa.jpg" alt="mapa" width="2000" height="1102">
+            <h2>Contáctanos</h2>
+            <p class="box">Rellena el siguiente formulario y nos pondremos en contacto contigo para organizar una cita y resolver todas tus dudas.</p>
+        </section>
+
+        <div class="contacto-section">
+            <form action="#" method="post">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" pattern="(?=.*?[A-Z])(?=.*?[a-z])" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9,15}" placeholder="Ej: 600123456" required>
+
+                <label for="fecha">Fecha preferente para la cita:</label>
+                <input type="date" id="fecha" name="fecha" required>
+
+                <label for="mensaje">Mensaje o detalles adicionales:</label>
+                <textarea id="mensaje" name="mensaje" pattern="^[a-zA-Z0-9., ]*$" rows="5" required></textarea>
+
+                <label>
+                    <input type="checkbox" name="privacidad" required> Acepto la <a href="#">Política de privacidad</a>.
+                </label>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="redes">
+            <a href="#"><img src="../Images/Facebook-logo.png" alt="Facebook" width="2048" height="2049">Facebook</a>
+            <a href="#"><img src="../Images/Twitter-logo.jpg" alt="Twitter" width="500" height="500">Twitter</a>
+            <a href="#"><img src="../Images/Instagram-logo.png" alt="Instagram" width="499" height="500">Instagram</a>
+        </div>
+        <p>Dirección: Calle Teclado 123, Ciudad Custom</p>
+        <p><a href="#">Aviso legal</a></p>
+    </footer>
+</body>
+</html>

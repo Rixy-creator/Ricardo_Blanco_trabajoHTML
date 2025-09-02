@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CustomKeys - Presupuesto</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+    /*FUENTES ESPECIALES*/
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pacifico&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        <img class="icono" src="../Images/CustomKeys-logo.png" alt="Logo-empresa" width="500" height="500">
+        <h1>✨CustomKeys✨</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="presupuesto.html" class="active">Presupuesto</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+    <section>
+        <h2>Cómo calculamos tu presupuesto</h2>
+        <p class="box">El precio final depende de: Tamaño, materiales de carcasa y plate, tipo y cantidad de switches, set de keycaps, PCB (hotswap, 
+        QMK/VIA), mods acústicos (lubricado, espuma, tape mod), mano de obra y extras (cable, estuche).</p>
+
+        <h2>Qué incluye</h2>
+        <ul class="box-list">
+            <li>Asesoría personalizada de configuración y sonido.</li>
+            <li>Montaje profesional y verificación de cada tecla.</li>
+            <li>Ajuste de estabilizadores (lubricado y balanceo).</li>
+            <li>Garantía de 2 años y guía de mantenimiento.</li>
+        </ul>
+
+        <h2>Plazos estimados</h2>
+        <ul class="box-list">
+            <li>Gama baja/media: 3 - 7 días laborales (stock estándar).</li>
+            <li>Gama alta/custom: 1 - 3 semanas (según disponibilidad y personalización).</li>
+        </ul>
+
+        <h2>Notas importantes</h2>
+        <ul class="box-list">
+            <li>Precios orientativos en la tabla (pueden variar por stock o importación).</li>
+            <li>Posibilidad de pago por partes para proyectos custom.</li>
+            <li>Envíos asegurados y seguimiento online.</li>
+        </ul>
+
+        <h2>Preguntas frecuentes (FAQ)</h2>
+        <ul class="box-list">
+            <li><strong>¿ISO-ES o ANSI?</strong> Trabajamos ambos layouts; si quieres “Ñ”, elige ISO-ES.</li>
+            <li><strong>¿Sonido “thock” o “clack”?</strong> Lo ajustamos con switches, plate y espuma.</li>
+            <li><strong>¿Puedo traer mis piezas?</strong> Sí, montamos y ajustamos componentes que nos traigas.</li>
+            <li><strong>¿Mantenimiento?</strong> Recomendamos limpieza trimestral y cambio de lube anual si le das uso intensivo.</li>
+        </ul>
+
+        <p class="box">Aquí podrás ver una tabla con la media de lo que podría costar aproximadamente el teclado en base a la gama en la que se encuentre.
+        Como se ha comentado en el apartado de <em>"Notas importantes"</em> esto es una estimación, para estar seguros puedes contactarnos 
+        desde el apartado de <em>"Contacto"</em> y podremos resolver todas tus dudas y ver el precio exacto del teclado que tengas pensado crear.</p>
+        <table>
+        <caption>Comparativa de Presupuestos</caption>
+        <thead>
+            <tr>
+                <th>Gama</th>
+                <th>Características</th>
+                <th>Precio Estimado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="baja">Baja</td>
+                <td>Teclados básicos, switches estándar, sin personalización</td>
+                <td>50€ - 80€</td>
+            </tr>
+            <tr>
+                <td class="media">Media</td>
+                <td>Mejor calidad de switches, retroiluminación RGB básica, personalización parcial</td>
+                <td>120€ - 200€</td>
+            </tr>
+            <tr>
+                <td class="alta">Alta</td>
+                <td>Switches premium, iluminación avanzada, keycaps de alta durabilidad</td>
+                <td>250€ - 400€</td>
+            </tr>
+            <tr>
+                <td class="custom">Custom</td>
+                <td>Totalmente personalizado: switches a elección, keycaps especiales, grabado y extras</td>
+                <td>500€ en adelante</td>
+            </tr>
+        </tbody>
+        </table>
+        <h2 style="text-align: center;">Solicita tu presupuesto personalizado</h2>
+        <form class="form-presupuesto" action="#" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" pattern="(?=.*?[A-Z])(?=.*?[a-z])" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}" placeholder="Ej: 612345678" required>
+
+            <label for="mensaje">Solicite más información:</label>
+            <textarea id="mensaje" name="mensaje" pattern="^[a-zA-Z0-9., ]*$" rows="4" required></textarea>
+
+            <div class="checkbox">
+                <input type="checkbox" id="privacidad" name="privacidad" required>
+                <label for="privacidad">Acepto la <a href="#">Política de Privacidad</a></label>
+            </div>
+            
+            <button type="submit">Enviar presupuesto</button>
+        </form>
+    </section>
+    </main>
+
+    <footer>
+    <div class="redes">
+        <a href="#"><img src="../Images/Facebook-logo.png" alt="Facebook" width="2048" height="2049">Facebook</a>
+        <a href="#"><img src="../Images/Twitter-logo.jpg" alt="Twitter" width="500" height="500">Twitter</a>
+        <a href="#"><img src="../Images/Instagram-logo.png" alt="Instagram" width="499" height="500">Instagram</a>
+    </div>
+        <p>Dirección: Calle Teclado 123, Ciudad Custom</p>
+        <p><a href="#">Aviso legal</a></p>
+    </footer>
+</body>
+</html>

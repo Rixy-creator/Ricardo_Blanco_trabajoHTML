@@ -1,0 +1,374 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ESTILOS GENERALES */
+html, body {
+    height: auto;
+    min-height: 100vh;
+    overflow-y: auto;
+    background-image: url('../Images/Fondo-index.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-size: 25px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    line-height: 1.6;
+}
+
+header {
+    background: #111;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #A600FF;
+}
+
+h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* TAMAÑO DEL LOGO DE LA EMPRESA */
+.icono {
+    width: 10%;
+    height: 10%;
+}
+
+/* CAJA PARA LOS PARRAFOS SEAN MÁS LEGIBLES */
+.box {
+    box-shadow: 3px 5px 10px #111;
+    background-color: #6a00a3;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-bottom: 40px
+}
+
+.box-list {
+    box-shadow: 3px 5px 10px #111;
+    background-color: #6a00a3;
+    border-radius: 10px;
+    padding-left: 30px;
+    margin-bottom: 40px
+}
+
+/* COLORES DE LAS GAMAS */
+.baja {
+    color: rgb(85, 255, 0);
+}
+.media {
+    color: yellow;
+}
+.alta {
+    color: red;
+}
+.custom {
+    color: transparent;
+    font-weight: 600;
+    background-image: linear-gradient(to left, #FFD700, #7B68EE, #3498db, #2ecc71, #FFD700);    
+    background-clip: text;
+    -webkit-background-clip: text; /* compatibilidad con navegadores WebKit */
+    animation: color 3s linear infinite;
+    background-size: 500%;
+}
+
+.custom::marker {
+    color: white; /* punto blanco */
+}
+
+@keyframes color {
+    from {
+        background-position: 0% 50%;
+    }
+
+    to {
+        background-position: 100% 50%;
+    }
+}
+
+main ul {
+    margin-left: 20px;
+}
+
+nav ul {
+    padding-left: 50px;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    font-family: "Pacifico", cursive;
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 12px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #A600FF;
+    border-radius: 5px;
+}
+
+nav a.active {
+    background: #A600FF;
+    border-radius: 5px;
+}
+
+/* CONTENIDO */
+main {
+    padding: 20px;
+}
+
+/* GALERÍA DE PRODUCTOS */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    padding-bottom: 40px;
+}
+
+.galeria img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+}
+
+/* ESTILOS DE LA TABLA DE PRESUPUESTOS */
+    table {
+        width: 90%;
+        margin: 30px auto;
+        border-collapse: collapse;
+        font-size: 20px;
+        background-color: rgba(0,0,0,0.7);
+        box-shadow: 3px 5px 10px #111;
+        border-radius: 12px;
+        overflow: hidden;
+    }
+
+    th, td {
+        padding: 15px;
+        text-align: center;
+    }
+
+    th {
+        background-color: #A600FF;
+        color: #fff;
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 28px;
+        letter-spacing: 1px;
+    }
+
+    tr:nth-child(even) {
+        background-color: rgba(255,255,255,0.05);
+    }
+
+    tr:hover {
+        background-color: rgba(166,0,255,0.3);
+    }
+
+    td {
+        color: #fff;
+    }
+    
+    caption {
+        caption-side: top;
+        margin-bottom: 15px;
+        font-size: 40px;
+        font-family: "Bebas Neue", sans-serif;
+        color: #fff;
+        text-shadow: 2px 2px 5px black;
+    }
+
+/* CONTACTO */
+.contacto-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;      
+    padding: 20px 20px;
+    min-height: 80vh;
+}
+
+.mapa {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* FORMULARIO BASE */
+form {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 3px 5px 12px rgba(0,0,0,0.7);
+    width: 100%;
+    max-width: 600px;
+    margin: 20px;
+}
+
+form label {
+    font-size: 18px;
+    margin-bottom: 5px;
+    display: block;
+    font-weight: bold;
+}
+
+form input, form textarea, form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    background: #fff;
+    color: #111;
+    transition: 0.3s;
+}
+
+form input:focus, form textarea:focus {
+    outline: none;
+    border: 2px solid #A600FF;
+    box-shadow: 0 0 8px #A600FF;
+}
+
+form textarea {
+    resize: none;
+}
+
+/* Checkbox */
+form label input[type="checkbox"] {
+    margin-right: 10px;
+    width: auto;
+}
+
+/* Botón */
+form button {
+    background: #A600FF;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #6a00a3;
+    transform: scale(1.05);
+}
+
+/* FORMULARIO DE PRESUPUESTO */
+.form-presupuesto {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 3px 5px 12px rgba(0,0,0,0.7);
+    width: 90%;
+    max-width: 600px;
+    margin: 40px auto;  /* <-- centrado debajo de la tabla */
+    display: flex;
+    flex-direction: column;
+}
+
+.form-presupuesto label {
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-presupuesto input, .form-presupuesto textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    background: #fff;
+    color: #111;
+}
+
+.form-presupuesto input:focus, .form-presupuesto textarea:focus {
+    outline: none;
+    border: 2px solid #A600FF;
+    box-shadow: 0 0 8px #A600FF;
+}
+
+.form-presupuesto .checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.form-presupuesto .checkbox input {
+    width: auto;
+    margin-right: 10px;
+}
+
+.form-presupuesto button {
+    background: #A600FF;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.form-presupuesto button:hover {
+    background: #6a00a3;
+    transform: scale(1.05);
+}
+
+/* PIE DE PÁGINA */
+footer {
+    background: #111;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+footer .redes {
+    margin-top: 10px;
+}
+
+footer .redes img {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    vertical-align: middle;
+    transition: transform 0.3s;
+}
+
+footer .redes img:hover {
+    transform: scale(1.2);
+}
